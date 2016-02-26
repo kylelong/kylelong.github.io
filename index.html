@@ -2,8 +2,29 @@
 <html>
 <head>
 	<title>Kyle Long</title>
+	<link rel="stylesheet" href="main.css">
 </head>
 <body>
-<p> My name is Kyle Long </p>
+<header> 
+<img src="headshot.jpg" id= "headshot" alt="headshot" width="180" height="200">
+<p> Kyle Alexander Long </p>
+<p> Computer Science </p>
+<p> Virgina Tech Class of 2018 </p>
+</header>
+<nav>
+<ul>
+    <li> <a href="about.html"> Info </a> </li>
+	<li> <a href="pages.html"> Pages </a> </li>
+</ul>
+</nav>
+<footer id="footer"></footer>
+</footer>
+<script type="text/javascript">
+	var date = new Date();
+	var year = date.getFullYear();
+	var foot = document.getElementById("footer");
+	foot.innerHTML = '<p> Kyle Long - Copyright &copy; ' + year + '</p>';
+</script>
 </body>
+
 </html>

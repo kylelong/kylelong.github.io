@@ -1,0 +1,47 @@
+header
+{
+	position: fixed;
+	right: 580px;
+	top: 75px;
+	text-align: center;
+}
+#headshot
+{
+	border-radius: 50%;
+}
+#footer
+{
+   position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
+ul
+{
+	list-style-type: none;
+
+	
+
+}
+
+li
+{
+	display: inline;
+	margin-left: 970px;
+	margin-right: -890px;
+  
+
+
+}
+a:link
+{
+	text-decoration: none;
+	color: grey;
+}
+a:hover
+{
+	color: black;
+}
