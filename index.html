@@ -2,28 +2,61 @@
 <html>
 <head>
 	<title>Kyle Long</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="main.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.2-rc.1/css/select2.min.css" rel="stylesheet" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.2-rc.1/js/select2.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="searchlist/src/jquery-customselect.css">
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+	<style>
+
+		.modal-body .form-horizontal .col-sm-2,
+		.modal-body .form-horizontal .col-sm-10 {
+			width: 100%
+		}
+
+		.modal-body .form-horizontal .control-label {
+			text-align: left;
+		}
+		.modal-body .form-horizontal .col-sm-offset-2 {
+			margin-left: 15px;
+		}
+	</style>
 </head>
 <body>
-<header> 
-<img src="headshot.jpg" id= "headshot" alt="headshot" width="180" height="200">
-<p> Kyle Alexander Long </p>
-<p> Computer Science </p>
-<p> Virgina Tech Class of 2018 </p>
-</header>
-<nav>
-<ul>
-    <li> <a href="about.html"> Info </a> </li>
-	<li> <a href="pages.html"> Pages </a> </li>
-</ul>
-</nav>
-<footer id="footer"></footer>
+	<header > 
+		<img src="headshot.jpg" id= "headshot" class="img-thumbnail" alt="headshot" width="180" height="200">
+		<p> Kyle Long </p>
+		<p> Virgina Tech '18 </p>
+		<p> Computer Science </p>
+		<p> Charlotte, NC </p>
+		<div class="pages"> 
+			<img src="git.png" >
+			<img src="twitter.png" >
+			<img src="linkedin.png" >
+		</div>
+	</header>
+	
+
+
+
+	<footer id="footer"></footer>
 </footer>
 <script type="text/javascript">
 	var date = new Date();
 	var year = date.getFullYear();
 	var foot = document.getElementById("footer");
 	foot.innerHTML = '<p> Kyle Long - Copyright &copy; ' + year + '</p>';
+</script>
+
+<script type="text/javascript">
+	
+	$('#myModal').on('shown.bs.modal', function () {
+		$('#myInput').focus()
+	})
 </script>
 </body>
 
