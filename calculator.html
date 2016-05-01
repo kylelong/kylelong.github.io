@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<link rel=stylesheet href="https://s3-us-west-2.amazonaws.com/colors-css/2.2.0/colors.min.css">
+	<style type="text/css">
+		.calculator
+		{
+			position: fixed;
+			top: 10%;
+			left: 40%;
+		}
+		button
+		{
+			background-color: #4CAF50;
+			border: none;
+			font-size: 28px;
+			color: #FFFFFF;
+			padding: 20px;
+			width: 100px;
+			text-align: center;
+			-webkit-transition-duration: 0.4s; /* Safari */
+			transition-duration: 0.4s;
+			text-decoration: none;
+			overflow: hidden;
+			cursor: pointer;
+			margin: 12px;
+		}
+		#answer{
+			font-style: italic;
+			font-style: Times;
+			font-size: 30px;
+		}
+		.operator, .two
+		{
+			background-color: rgb(255,165,0);
+		}
+		.three, .one
+		{
+			background-color:#800000;
+		}
+
+	}
+
+</style>
+</head>
+<body>
+	<div class="calculator">
+		
+		
+
+		<table>
+            <tr> 
+          <td>  <button id="C" style="background-color: #CCCCCC"  type="button" onclick="answer.innerHTML = ''">C</button> </td>
+          <td id="answer" name="answer">  </td>
+            </tr>
+			<tr> 
+				<td> <button  class="one" id="button"   type="button"  onclick="answer.innerHTML+= '7'">7</button> </td>
+				<td> <button class="two" id="button"  type="button" onclick="answer.innerHTML+= '8'">8</button> </td>
+				<td> <button  class="three" id="button" type="button" onclick="answer.innerHTML+= '9'">9</button> </td>
+				<td> <button class="operator" id="button"  type="button" onclick="answer.innerHTML+= '+'">+</button> </td>
+			</tr>
+
+			<tr> 
+				<td> <button class="one" id="button"  type="button" onclick="answer.innerHTML+= '4'">4</button> </td>
+				<td> <button class="two" id="button"  type="button" onclick="answer.innerHTML+= '5'">5</button> </td>
+				<td> <button class="three" id="button"  type="button" onclick="answer.innerHTML+= '6'">6</button> </td>
+				<td> <button class="operator" id="button"  type="button" onclick="answer.innerHTML+= '-'">-</button> </td>
+			</tr>
+
+			<tr> 
+				<td> <button  class="one"id="button"  type="button" onclick="answer.innerHTML+= '1'">1</button> </td>
+				<td> <button   class="two"id="button"  type="button" onclick="answer.innerHTML+= '2'">2</button> </td>
+				<td> <button  class="three" id="button"  type="button" onclick="answer.innerHTML+= '3'">3</button> </td>
+				<td> <button class="operator" id="button"  type="button" onclick="answer.innerHTML+= '/'">&divide;</button> </td>
+			</tr>
+
+			<tr> 
+				<td> <button class="one" id="button"  type="button" onclick="answer.innerHTML+= '0'">0</button> </td>
+				<td> <button class="two" id="button"  type="button" onclick="answer.innerHTML+= '.'">.</button> </td>
+				<td> <button  class="three" id="button"  type="button" onclick="answer.innerHTML = eval(answer.innerHTML)">=</button> </td>
+				<td> <button class="operator" id="button"  type="button" onclick="answer.innerHTML+= 'x'">&times;</button> </td>
+			</tr>
+
+		</table>
+	</div>
+
+	<script type="text/javascript">
+
+	</script>
+</body>
+</html>

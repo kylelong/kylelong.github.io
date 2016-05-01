@@ -6,25 +6,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="main.css">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.2-rc.1/css/select2.min.css" rel="stylesheet" />
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.2-rc.1/js/select2.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-	<link rel="stylesheet" type="text/css" href="searchlist/src/jquery-customselect.css">
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
 	<style>
 
-		.modal-body .form-horizontal .col-sm-2,
-		.modal-body .form-horizontal .col-sm-10 {
-			width: 100%
-		}
-
-		.modal-body .form-horizontal .control-label {
-			text-align: left;
-		}
-		.modal-body .form-horizontal .col-sm-offset-2 {
-			margin-left: 15px;
-		}
+		
+		
 	</style>
 </head>
 <body>
@@ -38,8 +26,42 @@
 			<a href="https://github.com/kylelong"><img src="git.png" ></a>
 			<a href="https://twitter.com/Kyle__Long"><img src="twitter.png" ></a>
 			<a href="https://www.linkedin.com/in/kyle-long-2a097474"><img src="linkedin.png" ></a>
-		</div>
+		</div> <br> 
+		
 	</header>
+
+	<div class="projects">
+		<h3> Projects </h3> <br>
+		<a href="calculator.html">Hokie Calculator</a>
+		<a href="https://gibjab.co"> GibJab </a>
+	</div>
+
+<div id="slideshow">
+<div>
+ <img src="running.jpg" />
+ </div>
+ <div>
+ <img src="family.jpg"/> 
+ </div>
+
+<div> 
+ <img src="southxc.jpg" />
+ </div>
+ <div>
+<img src="usc.jpg" />
+ </div>
+  <div>
+<img src="3.2.jpg" />
+ </div>
+  <div>
+<img src="cello.jpg" />
+ </div>
+ </div>
+
+
+	
+
+	
 	
 
 
@@ -51,13 +73,20 @@
 	var year = date.getFullYear();
 	var foot = document.getElementById("footer");
 	foot.innerHTML = '<p> Kyle Long - Copyright &copy; ' + year + '</p>';
-</script>
 
-<script type="text/javascript">
-	
-	$('#myModal').on('shown.bs.modal', function () {
-		$('#myInput').focus()
-	})
+	$("#slideshow > div:gt(0)").hide();
+
+setInterval(function() { 
+  $('#slideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow');
+},  3000);
+
+
+
 </script>
 </body>
 
