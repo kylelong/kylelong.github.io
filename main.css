@@ -1,22 +1,18 @@
-header
-{
-	position: fixed;
-	right: 1100px;
-	top: 123px;
-	text-align: center;
-}
-body
-{
-	
 
-}
-#headshot
+a:hover
 {
-	
+	color: black;
+}
+
+.pages img
+{
+	height: 50px;
+	width: 50px;
+	padding: 2px;
 }
 #footer
 {
-	position: absolute;
+	position: fixed;
 	right: 0;
 	bottom: 0;
 	left: 0;
@@ -24,45 +20,14 @@ body
 
 	text-align: center;
 }
-
-li
-{
-	display: inline;
-	margin-left: 970px;
-	margin-right: -890px;
-
-
-
-}
-a:link
-{
-	text-decoration: none;
-	color: grey;
-}
-a:hover
-{
-	color: black;
-}
-header p
-{
-	line-height: 10%;
-}
-.pages img
-{
-	height: 50px;
-	width: 50px;
-	padding: 2px;
-}
  h3
 {
-	display: inline;
+	text-align: center;
 	font-size: 18px;
 	font-weight: normal;
+	font-family: Courier;
+	color: #0088dd;
 
-}
-div h3 
-{
-	text-decoration: underline;
 }
 #slideshow img
 {
@@ -75,21 +40,33 @@ div h3
     width: 240px; 
     height: 240px; 
     padding: 10px; 
+
     
 }
 
 #slideshow > div { 
     position: absolute; 
     top: 10px; 
-    left: 10px; 
+    left: -150px; 
     right: 10px; 
     bottom: 10px; 
 }
-div a 
+#home
 {
-	display: inline-block;
+
+	width:1000px;
+	text-align: center;
 }
-.projects a
+#about p
 {
-	display: block;
+    text-align: center;
+    word-wrap: break-word; 
 }
+#me p
+{
+	text-align: center;
+}
+
+
+
+

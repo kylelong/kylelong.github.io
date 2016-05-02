@@ -2,13 +2,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Kyle Long</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Portfolio \ Blog for Kyle Long">
+	<meta name="author" content="Kyle Long">
+	<meta name="keywords" content="computer science student, virginia tech, Kyle Long">
+	<title>Kyle Long</title>
 	<link rel="stylesheet" href="main.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 	<style>
 
 		
@@ -16,79 +26,97 @@
 	</style>
 </head>
 <body>
-	<header > 
-		<img src="headshot.jpg" id= "headshot" class="img-thumbnail" alt="headshot" width="180" height="200">
-		<p> Kyle Long </p>
-		<p> Virgina Tech '18 </p>
-		<p> Computer Science </p>
-		<p> Charlotte, NC </p>
-		<div class="pages"> 
-			<a href="https://github.com/kylelong"><img src="git.png" ></a>
-			<a href="https://twitter.com/Kyle__Long"><img src="twitter.png" ></a>
-			<a href="https://www.linkedin.com/in/kyle-long-2a097474"><img src="linkedin.png" ></a>
-		</div> <br> 
-		
-	</header>
+	<div class="container">
+		<div class="header clearfix">
+			<nav>
+				<ul class="nav nav-pills pull-right">
+					<li role="presentation"><a href="#home">Home</a></li>
+					<li role="presentation"><a href="#about">About</a></li>
+					<li role="presentation"><a href="#projects">Projects</a></li>
+				</ul>
+			</nav>
 
-	<div class="projects">
-		<h3> Projects </h3> <br>
-		<a href="calculator.html">Hokie Calculator</a>
-		<a href="https://gibjab.co"> GibJab </a>
-		<a href = "todolist.html"> To do list </a>
-	</div>
+		</div>
 
-<div id="slideshow">
-<div>
- <img src="running.jpg" />
- </div>
- <div>
- <img src="family.jpg"/> 
- </div>
+		<div id="home"> 
+			<img src="headshot.jpg" id= "headshot" class="img-thumbnail" alt="headshot" width="180" height="200">
+			<p> Kyle Long </p>
+			<p> Virgina Tech '18 </p>
+			<p> Computer Science </p>
+			<p> Charlotte, NC </p>
+			<div class="pages"> 
+				<a href="https://github.com/kylelong"><img src="git.png" ></a>
+				<a href="https://twitter.com/Kyle__Long"><img src="twitter.png" ></a>
+				<a href="https://www.linkedin.com/in/kyle-long-2a097474"><img src="linkedin.png" ></a>
+			</div> <br> 
 
-<div> 
- <img src="southxc.jpg" />
- </div>
- <div>
-<img src="usc.jpg" />
- </div>
-  <div>
-<img src="3.2.jpg" />
- </div>
-  <div>
-<img src="cello.jpg" />
- </div>
- </div>
+		</div>
 
+		<div id="me">
+		<h3 id="about"> About Me </h3>
+			<div id="slideshow">
+				<div>
+					<img src="running.jpg" />
+				</div>
+				<div>
+					<img src="family.jpg"/> 
+				</div>
 
-	
-
-	
-	
-
-
-
-	<footer id="footer"></footer>
-</footer>
-<script type="text/javascript">
-	var date = new Date();
-	var year = date.getFullYear();
-	var foot = document.getElementById("footer");
-	foot.innerHTML = '<p> Kyle Long - Copyright &copy; ' + year + '</p>';
-
-	$("#slideshow > div:gt(0)").hide();
-
-setInterval(function() { 
-  $('#slideshow > div:first')
-    .fadeOut(1000)
-    .next()
-    .fadeIn(1000)
-    .end()
-    .appendTo('#slideshow');
-},  3000);
+				<div> 
+					<img src="southxc.jpg" />
+				</div>
+				<div>
+					<img src="usc.jpg" />
+				</div>
+				<div>
+					<img src="3.2.jpg" />
+				</div>
+				<div>
+					<img src="cello.jpg" />
+				</div> 
+			</div> <br> <br>
+			<p> I am sophomore studying Computer Science at Virginia Tech and was born and raised in Charlotte, NC. <br>
+			I always knew that my professional career would revolve around computers. I became interested in programming <br>
+			once I realized it was responsible for the video games I played a lot in middle school. I began learning javascript <br> and my passion 
+			took of from there. I took advanced placement computer science in high school, a course focused in java and knew <br> I wanted to major in 
+			computer science in college. I have since then continued to develop my skills by engaing in side projects and hackathons. </p>
+		</div>
 
 
 
-</script>
-</body>
 
-</html>
+<div >
+<h3 id="projects"> Projects </h3>
+
+</div>
+
+
+
+
+
+		<footer id="footer"></footer>
+
+		<script type="text/javascript">
+			var date = new Date();
+			var year = date.getFullYear();
+			var foot = document.getElementById("footer");
+			//foot.innerHTML = '<p> Kyle Long - Copyright &copy; ' + year + '</p>';
+
+
+			$("#slideshow > div:gt(0)").hide();
+
+			setInterval(function() { 
+				$('#slideshow > div:first')
+				.fadeOut(1000)
+				.next()
+				.fadeIn(1000)
+				.end()
+				.appendTo('#slideshow');
+			},  3000);
+
+
+
+		</script>
+	</body>
+
+	</html>
