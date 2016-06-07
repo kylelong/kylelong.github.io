@@ -1,72 +1,101 @@
 
-a:hover
-{
-	color: black;
-}
-
-.pages img
-{
-	height: 50px;
-	width: 50px;
-	padding: 2px;
-}
-#footer
-{
-	position: fixed;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	padding: 1rem;
-
-	text-align: center;
-}
- h3
+h1.name
 {
 	text-align: center;
-	font-size: 18px;
-	font-weight: normal;
-	font-family: Courier;
-	color: #0088dd;
+	font-family: courier;
+	font-size 20px;
+	color: #bc2e1e;
+	letter-spacing: 12px;
+
+	text-shadow:
+	0 1px 0px #378ab4,
+	1px 0 0px #5dabcd,
+	1px 2px 1px #378ab4,
+	2px 1px 1px #5dabcd,
+	2px 3px 2px #378ab4,
+	3px 2px 2px #5dabcd,
+	3px 4px 2px #378ab4,
+	4px 3px 3px #5dabcd,
+	4px 5px 3px #378ab4,
+	5px 4px 2px #5dabcd,
+	5px 6px 2px #378ab4,
+	6px 5px 2px #5dabcd,
+	6px 7px 1px #378ab4,
+	7px 6px 1px #5dabcd,
+	7px 8px 0px #378ab4,
+	8px 7px 0px #5dabcd;
+}
+strong
+{
+	font-size: 24px;
+}
+
+
+
+@media (min-width: 0px) (max-width: 768px )
+{
+	.bio
+	{
+	position: absolute;
+	top:80%;
+	left:33%;
+	margin-right: -50%;
+	transform: translate(-50%, );
+
+	}
+	div p
+	{
+		width: 500px;
+	}
 
 }
+@media (min-width: 768px) and (max-width: 1024)
+{
+	.bio
+	{
+	position: absolute;
+	top:80%;
+	left:33%;
+	margin-right: -50%;
+	transform: translate(-50%, );
+
+	}
+	div p
+	{
+		width: 500px;
+	}
+
+
+}
+
+	
+
+
 #slideshow img
 {
 	height: 300px;
 	width: 450px;
+	box-shadow: 10px 10px 5px #888888;
 }
 #slideshow { 
-    margin: 50px auto; 
-    position: relative; 
-    width: 240px; 
-    height: 240px; 
-    padding: 10px; 
+	margin: 50px auto; 
+	position: relative; 
+	width: 240px; 
+	height: 240px; 
+	padding: 10px; 
 
-    
+
+
 }
 
 #slideshow > div { 
-    position: absolute; 
-    top: 10px; 
-    left: -150px; 
-    right: 10px; 
-    bottom: 10px; 
-}
-#home
-{
+	position: absolute; 
+	top: 10px; 
+	left: -150px; 
+	right: 10px; 
+	bottom: 10px; 
 
-	width:1000px;
-	text-align: center;
 }
-#about p
-{
-    text-align: center;
-    word-wrap: break-word; 
-}
-#me p
-{
-	text-align: center;
-}
-
 
 
 

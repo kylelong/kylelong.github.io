@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,81 +26,75 @@
 	</style>
 </head>
 <body>
-	<div class="container">
-		<div class="header clearfix">
-			<nav>
-				<ul class="nav nav-pills pull-right">
-					<li role="presentation"><a href="#home">Home</a></li>
-					<li role="presentation"><a href="#about">About</a></li>
-					<li role="presentation"><a href="#projects">Projects</a></li>
-				</ul>
-			</nav>
 
+		<h1 class="name" >  Kyle Long </h1>
+
+	<div >
+
+		<div id="slideshow" >
+			<div>
+				<img src="running.jpg" />
+			</div>
+			<div>
+				<img src="family.jpg"/> 
+			</div>
+
+			<div> 
+				<img src="southxc.jpg" />
+			</div>
+			<div>
+				<img src="usc.jpg" />
+			</div>
+			<div>
+				<img src="3.2.jpg" />
+			</div>
+			<div>
+				<img src="cello.jpg" />
+			</div> 
+		</div> <br> <br>
+		
+		<p class="bio">  <strong> H </strong>ello, I am a sophomore studying Computer Science at Virginia Tech and was born and raised in Charlotte, North Carolina. At a young age I was intrigued to how computers worked. I remember frequently playing games on the family computer and wondering how the machine worked. I then knew after sometime that my professional career would revolve around computers. I became interested in programming 
+			once I realized it was responsible for the video games I played a lot in middle school. I began learning javascript and my passion 
+			sprouted from there. I took advanced placement computer science in high school, a course focused in java and knew I wanted to major in computer science in college. I have since then continued to develop my skills by engaing in side projects and hackathons. </p>
+
+        
 		</div>
 
-		<div id="home"> 
-			<img src="headshot.jpg" id= "headshot" class="img-thumbnail" alt="headshot" width="180" height="200">
-			<p> Kyle Long </p>
-			<p> Virgina Tech '18 </p>
-			<p> Computer Science </p>
-			<p> Charlotte, NC </p>
-			<div class="pages"> 
-				<a href="https://github.com/kylelong"><img src="git.png" ></a>
-				<a href="https://twitter.com/Kyle__Long"><img src="twitter.png" ></a>
-				<a href="https://www.linkedin.com/in/kyle-long-2a097474"><img src="linkedin.png" ></a>
-			</div> <br> 
+		<div id="content"> 
 
-		</div>
+        <section class="info">
 
-		<div id="me">
-		<h3 id="about"> About Me </h3>
-			<div id="slideshow">
-				<div>
-					<img src="running.jpg" />
-				</div>
-				<div>
-					<img src="family.jpg"/> 
-				</div>
+         	<h3> About </h3>
+         	<p> Name: Kyle Long <br> College: Virginia Tech <br> Major: Computer Science <br> Hobbies: Running, Video Games, Playing Cello, Reading </p>
+         </section>  
+         <section class="info">
+         	<h3> Contact </h3> 
+         	<p> The best way to contact me is by email: <a href="mailto:kylel95@vt.edu">  kylel95@vt.edu </a></p>
 
-				<div> 
-					<img src="southxc.jpg" />
-				</div>
-				<div>
-					<img src="usc.jpg" />
-				</div>
-				<div>
-					<img src="3.2.jpg" />
-				</div>
-				<div>
-					<img src="cello.jpg" />
-				</div> 
-			</div> <br> <br>
-			<p> I am sophomore studying Computer Science at Virginia Tech and was born and raised in Charlotte, NC. <br>
-			I always knew that my professional career would revolve around computers. I became interested in programming <br>
-			once I realized it was responsible for the video games I played a lot in middle school. I began learning javascript <br> and my passion 
-			took of from there. I took advanced placement computer science in high school, a course focused in java and knew <br> I wanted to major in 
-			computer science in college. I have since then continued to develop my skills by engaing in side projects and hackathons. </p>
-		</div>
+         </section> 
+         <section class="info">
+         	<h3> Side Projects  </h3> 
+            
+         </section> 
 
-
-
-
-<div >
-<h3 id="projects"> Projects </h3>
-
-</div>
+         </div>
+         
 
 
 
 
 
-		<footer id="footer"></footer>
+
+
+		<!-- <footer id="footer" class="container"></footer> -->
 
 		<script type="text/javascript">
+		/*
 			var date = new Date();
 			var year = date.getFullYear();
 			var foot = document.getElementById("footer");
-			//foot.innerHTML = '<p> Kyle Long - Copyright &copy; ' + year + '</p>';
+			foot.innerHTML = '<p> Kyle Long - Copyright &copy; ' + year + '</p>'; 
+			*/
 
 
 			$("#slideshow > div:gt(0)").hide();
@@ -114,9 +108,18 @@
 				.appendTo('#slideshow');
 			},  3000);
 
+			
+			function goHome()
+			{
+				window.location.href = "Blog/index.html";
+			}
+			var name = document.getElementById("name");
+			name.addEventListener('click',goHome, false);
+
 
 
 		</script>
+
 	</body>
 
 	</html>
