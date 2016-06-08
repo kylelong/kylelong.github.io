@@ -57,9 +57,11 @@ strong
 {
 	.bio
 	{
+
 		position: absolute;
 		left: 31%;
 		top:83%;
+
 
 	}
 
@@ -71,6 +73,7 @@ strong
 		position: absolute;
 		top: 15%;
 		right: 1%;
+		padding-right: 20px;
 	}
 }
 @media (max-width: 1000px)
@@ -79,6 +82,7 @@ strong
 	{
 		width: auto;
 		height: auto;
+
 	}
 }
 
