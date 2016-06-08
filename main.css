@@ -32,23 +32,6 @@ strong
 
 
 
-@media (min-width: 0px) (max-width: 768px )
-{
-	.bio
-	{
-	position: absolute;
-	top:80%;
-	left:33%;
-	margin-right: -50%;
-	transform: translate(-50%, );
-
-	}
-	div p
-	{
-		width: 500px;
-	}
-
-}
 @media (min-width: 768px) and (max-width: 1024)
 {
 	.bio
@@ -58,13 +41,10 @@ strong
 	left:33%;
 	margin-right: -50%;
 	transform: translate(-50%, );
+	width: 200px;
 
 	}
-	div p
-	{
-		width: 500px;
-	}
-
+	
 
 }
 
