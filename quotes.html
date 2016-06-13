@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Quote Randomizer</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="author" content="Kyle Long">
+	<meta name="keywords" content="Kyle Long, Computer Science, Virginia Tech, Charlotte, NC">
+	<meta name="description" content=" Kyle Long's Quote Randomizer">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+<blockquote style="position: absolute;	top: 20%; right: 50%;">
+   <p id="quote"></p>
+	<footer id="author"></footer>
+</blockquote>
+
+<button class="btn btn-default" style="position: absolute;	top: 60%; right: 50%;"> Random Quote</button>
+
+<script type="text/javascript">
+	 var quote = document.getElementById("quote");
+	 var author = document.getElementById("author");
+	 var xmlhttp = new XMLHttpRequest(), 
+	 json;
+	 xmlhttp.open('GET', 'quotes.json', true);
+	 xmlhttp.send();
+
+</script>
+</body>
+</html>
