@@ -10,21 +10,36 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 </head>
 <body>
-<blockquote style="position: absolute;	top: 20%; right: 50%;">
-   <p id="quote"></p>
-	<footer id="author"></footer>
-</blockquote>
+	<blockquote style="position: absolute;	top: 20%; right: 50%;">
+		<p id="quote"></p>
+		<footer id="author"></footer>
+	</blockquote>
 
-<button class="btn btn-default" style="position: absolute;	top: 60%; right: 50%;"> Random Quote</button>
+	<button class="btn btn-default" id="quoteButton" style="position: absolute;	top: 60%; right: 50%;"> Random Quote</button>
 
-<script type="text/javascript">
-	 var quote = document.getElementById("quote");
-	 var author = document.getElementById("author");
-	 var xmlhttp = new XMLHttpRequest(), 
-	 json;
-	 xmlhttp.open('GET', 'quotes.json', true);
-	 xmlhttp.send();
+	<script type="text/javascript">
+		var quote = document.getElementById("quote");
+		var author = document.getElementById("author");
+		var quoteObject = {
+			"quotes": [ { "author": "Eleanor Roosevelt", "saying": "The future belongs to those who believe in the beauty of their dreams."},
+			{"author" : "Ralph Waldo Emerson", "saying": "The only person you are destined to become is the one you decide to be."},
+			{"author" : "Galileo", "saying": "Enthusiatic people experience life from the inside out."}]
 
+		};
+
+
+   //console.log(math);
+   function inspire()
+   {
+   	var q = quoteObject.quotes;
+   	var max = q.length;
+   	var math = Math.floor(Math.random() * max);
+   	console.log(math);
+   	quote.innerHTML = quoteObject.quotes[math].saying;
+   	author.innerHTML = quoteObject.quotes[math].author;
+   }
+   var btn = document.getElementById('quoteButton');
+ btn.onclick = inspire;
 </script>
 </body>
 </html>
