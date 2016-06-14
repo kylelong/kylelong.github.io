@@ -15,7 +15,7 @@
 		<footer id="author"></footer>
 	</blockquote>
 
-	<button class="btn btn-default" id="quoteButton" style="position: absolute;	top: 60%; right: 50%;"> Random Quote</button>
+	<button class="btn btn-primary" id="quoteButton" style="position: absolute;	top: 60%; right: 50%;"> Random Quote</button>
 
 	<script type="text/javascript">
 		var quote = document.getElementById("quote");
@@ -23,7 +23,9 @@
 		var quoteObject = {
 			"quotes": [ { "author": "Eleanor Roosevelt", "saying": "The future belongs to those who believe in the beauty of their dreams."},
 			{"author" : "Ralph Waldo Emerson", "saying": "The only person you are destined to become is the one you decide to be."},
-			{"author" : "Galileo", "saying": "Enthusiatic people experience life from the inside out."}]
+			{"author" : "Galileo", "saying": "Enthusiatic people experience life from the inside out."},
+			{"author": "Buddha", "saying": "The mind is everything. What you think you become."},
+			{"author": "Vince Lombardi", "saying": "Winning isn't everything, but wanting to win is."}]
 
 		};
 
@@ -41,5 +43,12 @@
    var btn = document.getElementById('quoteButton');
  btn.onclick = inspire;
 </script>
+<footer>
+	<p id="foot" style="position: absolute;  bottom:0px; right: 50%;">  Kyle Long &copy; </p>
+	<script type="text/javascript">
+	    var date = new Date;
+		document.getElementById('foot').innerHTML += date.getFullYear();
+	</script>
+</footer>
 </body>
 </html>
