@@ -10,8 +10,13 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 </head>
 <body>
+<ul class="nav nav-tabs" style="float:right;">
+  <li role="presentation"><a href="index.html">Home</a></li>
+  <li role="presentation"><a href="projects.html">Projects</a></li>
+</ul>
+
 	<blockquote style="position: absolute;	top: 20%; right: 50%;">
-		<p id="quote"></p>
+		<p id="quote" class="text-center"></p>
 		<footer id="author"></footer>
 	</blockquote>
 
@@ -20,12 +25,19 @@
 	<script type="text/javascript">
 		var quote = document.getElementById("quote");
 		var author = document.getElementById("author");
+		//JSON Object author:saying 
 		var quoteObject = {
 			"quotes": [ { "author": "Eleanor Roosevelt", "saying": "The future belongs to those who believe in the beauty of their dreams."},
 			{"author" : "Ralph Waldo Emerson", "saying": "The only person you are destined to become is the one you decide to be."},
 			{"author" : "Galileo", "saying": "Enthusiatic people experience life from the inside out."},
 			{"author": "Buddha", "saying": "The mind is everything. What you think you become."},
-			{"author": "Vince Lombardi", "saying": "Winning isn't everything, but wanting to win is."}]
+			{"author": "Vince Lombardi", "saying": "Winning isn't everything, but wanting to win is."},
+			{"author": "Booker T. Washington", "saying": "I have begun everything with the idea that I could succeed and I never had much patience with people who are always ready to explain why I or anyone else cannot succeed."},
+			{"author":"Theodore Roosevelt", "saying": "Nothing worth having was ever achieved without effort."},
+			{"author": "Neale Donald Walsch", "saying": "Life begins at the end of your comfort zone."},
+			{"author": "Nido R. Qubein", "saying": "Throughout life, be sure to accumulate good memories."},
+			{"author": "E.E Cummings", "saying": "The most wasted of all days is one without laughter."},
+			{"author": "Charles Darwin", "saying": "It is not the strongest of the species that survives, not the most intelligent tat survives. It is the one that is the most adaptable to change."}]
 
 		};
 
