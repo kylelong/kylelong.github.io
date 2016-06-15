@@ -25,6 +25,10 @@ h1.name
 	7px 8px 0px #378ab4,
 	8px 7px 0px #5dabcd;
 }
+h3
+{
+	font-family: sans-serif;
+}
 strong
 {
 	font-size: 24px;
@@ -66,6 +70,7 @@ strong
 	}
 
 }
+
 @media (min-width: 1000px) 
 {
 	#content
