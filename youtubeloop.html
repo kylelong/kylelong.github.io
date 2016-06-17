@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Youtube Looper</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="author" content="Kyle Long">
+	<meta name="keywords" content="Kyle Long, Computer Science, Virginia Tech, Charlotte, NC">
+	<meta name="description" content=" Kyle Long's Quote Randomizer">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	
+</head>
+<body>
+<ul class="nav nav-tabs" style="float:right;">
+  <li role="presentation"><a href="index.html">Home</a></li>
+  <li role="presentation"><a href="projects.html">Projects</a></li>
+</ul>
+	<div style="text-align:center; margin-top: 15px;">
+		<input type="text" name="" placeholder="Enter video url" id="url" size="35"> 
+		<button class="btn btn-primary" id="btn"> Load Video</button> <br> <br>
+		<iframe id="frame" width = "600" src="" height = "400" frameborder="no" allowfullscreen ></iframe> 
+		<p> This projects allows user to watch a youtube video as many times as they would like</p>
+      <p> Mini <a href="http://www.yourepeat.com/"> www.yourepeat.com</a> clone </p>
+	</div>
+	<script type="text/javascript">
+		var frame = document.getElementById("frame");
+		var btn = document.getElementById("btn");
+		var link = document.getElementById("url");
+
+
+		function changeVideo()
+		{
+			var source = link.value;
+			var url  = source.replace("watch?v=", "embed/");
+			url+= "?autoplay=1";
+			frame.src = url;
+
+		}
+
+		btn.onclick = changeVideo;
+
+
+	</script>
+</body>
+</html>
