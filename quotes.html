@@ -8,22 +8,38 @@
 	<meta name="keywords" content="Kyle Long, Computer Science, Virginia Tech, Charlotte, NC">
 	<meta name="description" content=" Kyle Long's Quote Randomizer">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<style type="text/css">
+		.content
+		{
+		
+          text-align: center;
+
+
+		}
+		#quote
+		{
+			font-family: Verdana;
+		}
+	</style>
 </head>
 <body>
-<ul class="nav nav-tabs" style="float:right;">
-  <li role="presentation"><a href="index.html">Home</a></li>
-  <li role="presentation"><a href="projects.html">Projects</a></li>
-</ul>
-
+	<ul class="nav nav-tabs" style="float:right;">
+		<li role="presentation"><a href="index.html">Home</a></li>
+		<li role="presentation"><a href="projects.html">Projects</a></li>
+	</ul>
+    <div class="content">
 	<blockquote style="position: absolute;	top: 20%; right: 50%;">
 		<p id="quote" class="text-center"></p>
 		<footer id="author"></footer> <br> <br>
-		<button class="btn btn-primary" id="quoteButton" > Random Quote</button>
+		<button class="btn btn-primary" id="quoteButton"> Random Quote</button>
 	</blockquote>
+	</div>
 
-	
+
 
 	<script type="text/javascript">
+	//style="position: absolute;	top: 20%; right: 50%;"
 		var quote = document.getElementById("quote");
 		var author = document.getElementById("author");
 		//JSON Object author:saying 
@@ -57,7 +73,20 @@
 			{"author": "George Washington", "saying": "It's wonderful what we can do if we're always doing."},
 			{"author": "Nora Roberts", "saying": "Somethings are out of your control. You can make it a party or a tragedy."},
 			{"author": "Denis Waitley", "saying": "There are two primary choices in life: to accept conditions as they exist, or accept the responsibility for changing them."},
-			{"author": "Helen Keller", "saying": "Life is either a great adventure or nothing."}]
+			{"author": "Helen Keller", "saying": "Life is either a great adventure or nothing."}, 
+			{"author": "Nelson Mandela", "saying": "It always seems impossible until is done."}, 
+			{"author": "Zig Ziglar", "saying": "You don't have to be great to start, but you have to start to be great."},
+			{"author" : "Victor Kiam", "saying": "Even if you fall on your face you're still moving forward."},
+			{"author": "Normal Vincent Peale", "saying": "It's always too eaerly to quit." },
+			{"author": "John Burroughs", "saying": "Leap, and the net will appear."},
+			{"author": "Wayne Dyer", "saying": "Go for it now. The future is promised to no one."},
+			{"author": "Herbert Simon", "saying": "One finds limits by pushing them."},
+			{"author": "William Butler Yeats", "saying": "Do not wait to strike till the iron is hot; but make it hot by strking."},
+			{"author": "Baltasar Gracian", "saying": "The wise does at once what the fool does at last."},
+			{"author": "Charles Atlas", "saying": "Step by step and the thing is done."},
+			{"author": "Daniel Webster", "saying": "There is always room at the top."},
+			{"author" : "Henry Ford" , "saying": "You can't build a reputation on what you are going to do."},
+			{"author": "Carol Burnett", "saying": "Only I can change my life. No one else can do it for me."}]
 
 		};
 
@@ -73,12 +102,12 @@
    	author.innerHTML = quoteObject.quotes[math].author;
    }
    var btn = document.getElementById('quoteButton');
- btn.onclick = inspire;
+   btn.onclick = inspire;
 </script>
 <footer>
 	<p id="foot" style="position: absolute;  bottom:0px; right: 50%;">  Kyle Long &copy; </p>
 	<script type="text/javascript">
-	    var date = new Date;
+		var date = new Date;
 		document.getElementById('foot').innerHTML += date.getFullYear();
 	</script>
 </footer>
