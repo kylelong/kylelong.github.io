@@ -46,10 +46,79 @@ a, a:hover, a:visited, a:active{
 	position: relative;
 	top: -30px;
 }
+#linecontainer{
+	position: absolute;
+	top: 35%;
+	left: 30%; 
+}
+#line{
+	background-color: red;
+	width: 200px;
+	height: 10px;
+}
+#linetwo{
+
+	background-color: yellow;
+	width: 200px;
+	height: 10px;
+	position: relative;
+	left: 120%;
+	top: -10px;
+}
+#linethree{
+	background-color: #4169E1;
+	width: 200px;
+	height: 10px;
+	position: relative;
+	left: 240%;
+	top: -20px;
+}
+#text{
+	position: absolute;
+	top: 38%;
+	width: 40%;
+	left: 30%;
+}
+#text p{
+	font-family: 'Open Sans';
+}
 @media(max-width: 640px){
 	#container{
 	position: absolute;
 	top: 20%;
-	left: 10%;
+	left: 8%;
+}
+#linecontainer{
+	position: absolute;
+	top: 35%;
+	left: 5%; 
+}
+#line{
+	background-color: red;
+	width: 100px;
+	height: 10px;
+}
+#linetwo{
+
+	background-color: yellow;
+	width: 100px;
+	height: 10px;
+	position: relative;
+	left: 120%;
+	top: -10px;
+}
+#linethree{
+	background-color: #4169E1;
+	width: 100px;
+	height: 10px;
+	position: relative;
+	left: 240%;
+	top: -20px;
+}
+#text{
+	position: absolute;
+	top: 36%;
+	width: 84%;
+	left: 5%;
 }
 }
