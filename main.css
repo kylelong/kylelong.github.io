@@ -86,24 +86,24 @@ a, a:hover, a:visited, a:active{
 }
 #line{
 	background-color: red;
-	width: 100px;
+	width: 80px;
 	height: 10px;
 }
 #linetwo{
 
 	background-color: yellow;
-	width: 100px;
+	width: 80px;
 	height: 10px;
 	position: relative;
-	left: 40%;
+	left: 35%;
 	top: -10px;
 }
 #linethree{
 	background-color: #4169E1;
-	width: 100px;
+	width: 80px;
 	height: 10px;
 	position: relative;
-	left: 80%;
+	left: 70%;
 	top: -20px;
 }
 
