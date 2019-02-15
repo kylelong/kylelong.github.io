@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#top, #right, #left, #bottom{
+						background-color: #d3d3d3;
+		}
+		#container{
+			position: absolute;
+			top: 10%;
+			left: 38%;
+		}
+		#box{
+			width: 100px;
+			height: 100px;
+			background-color: #E75480;
+			position: absolute;
+			top: 175px;
+			left: 33%;
+		}
+		#top{
+			height: 75px;
+			width: 300px;
+		}
+		#bottom{
+			position: absolute;
+			bottom: -75px;
+			height: 75px;
+			width: 300px;
+		}
+		#left{
+			position: relative;
+			left: -75px;
+			height: 300px;
+			width: 75px;
+		}
+		#right{
+			position: absolute;
+			right: -75px;
+			height: 300px;
+			width: 75px;
+		}
+
+	</style>
+</head>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<body>
+<div id="container">
+	<div id="box"></div>
+	<div id="top"></div>
+	<div id="right"></div>
+	<div id="bottom"></div>
+	<div id="left"></div>
+</div>
+<script type="text/javascript">
+	// var box = $("#box");
+	//       var pos = $("#box").position();
+	var box = document.getElementById("box");
+	$("#top").click(function(){
+					 		console.log("clicked top");
+      box.style.top = box.style.top - 1 + "px";
+
+	});
+	$("#right").click(function(){
+				 		console.log("clicked right");
+		     // console.log(pos.right);
+				   box.style.right = box.style.right + 1 + "px";
+
+	});
+	$("#bottom").click(function(){
+		     // console.log(pos.bottom);
+				 		console.log("clicked bottom");
+				 	   box.style.bottom = box.style.bottom - 1 + "px";
+
+	});
+	$("#left").click(function(){
+	      // console.log(pos.left);
+						 		console.log("clicked left");
+				   box.style.left = box.style.left + 1 + "px";
+	});
+</script>
+</body>
+</html>
